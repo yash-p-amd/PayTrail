@@ -31,7 +31,8 @@ class DisplayData: UITableViewController {
             ["title":"Federal Tax","data":"data","key":"FEDERAL_TAX"],
             ["title":"Provisional Tax","data":"data","key":"PROVISIONAL_TAX"],
             ["title":"Total Deduction","data":"data","key":"TOTAL_DEDUCTION"],
-            ["title":"Net Amount","data":"data","key":"NET_AMOUNT"] ]
+            ["title":"Net Amount","data":"data","key":"NET_AMOUNT"],
+            ["title":"Year Income","data":"data","key":"DISPLAY_YEAR_INCOME"] ]
 
     
 
@@ -76,7 +77,7 @@ class DisplayData: UITableViewController {
         SalaryDetailsDict[9]["data"] = String(calculatedData!.PROVISIONAL_TAX)
         SalaryDetailsDict[10]["data"] = String(calculatedData!.TOTAL_DEDUCTION)
         SalaryDetailsDict[11]["data"] = String(calculatedData!.NET_AMOUNT)
-        
+        SalaryDetailsDict[12]["data"] = String(calculatedData!.DISPLAY_YEAR_INCOME)
         
 
 
@@ -137,6 +138,8 @@ class DisplayData: UITableViewController {
                 //For UICOLOR code
                 //http://uicolor.xyz/#/rgb-to-ui
             }
+            
+            
         }
 
         

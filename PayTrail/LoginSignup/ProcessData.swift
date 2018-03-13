@@ -37,6 +37,7 @@ class ProcessData : NSObject
     //ExtraVars
     public var YEAR_INCOME = Double()
     public var DISPLAY_WAGE = Double()
+    public var DISPLAY_YEAR_INCOME = Double()
 
     init(getRegularHours:Double,getHourRate:Double,getOvertimeHours:Double,getStateHolidays:Double,getSickHours:Double,getWeeks:Double)
     {
@@ -170,6 +171,7 @@ class ProcessData : NSObject
         TOTAL_DEDUCTION = CPP + EMPLOYEMENT_INSURANCE + FEDERAL_TAX + PROVISIONAL_TAX
         NET_AMOUNT = GROSS_INCOME - TOTAL_DEDUCTION
         
+        DISPLAY_YEAR_INCOME = NET_AMOUNT * 12
         
         let numberOfPoints:Double = 100
         
@@ -189,6 +191,9 @@ class ProcessData : NSObject
         NET_AMOUNT = Double(round(numberOfPoints * NET_AMOUNT)/numberOfPoints)
      
         PROVISIONAL_TAX = Double(round(numberOfPoints * PROVISIONAL_TAX)/numberOfPoints)
+        
+        DISPLAY_YEAR_INCOME = Double(round(numberOfPoints * DISPLAY_YEAR_INCOME)/numberOfPoints)
+
 
     }
 }
