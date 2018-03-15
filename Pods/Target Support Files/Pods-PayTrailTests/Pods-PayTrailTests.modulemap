@@ -1,0 +1,6 @@
+framework module Pods_PayTrailTests {
+  umbrella header "Pods-PayTrailTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

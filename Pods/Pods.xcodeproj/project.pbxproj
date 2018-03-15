@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15D527F60F14F02F7E2B6B9A89644F35 /* Pods-PayTrailTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05813B8C6F923BFB9A940B3C89132FC8 /* Pods-PayTrailTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25D5D85AD8A08C992E75D6BB115E5601 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3A552DEA12A980C758BB73FA070BD5E7 /* Pods-PayTrailUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD10812D538A47BD9BAB22F2F939A080 /* Pods-PayTrailUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B8839E09ACF6D4D6C952D0A82AA5EDD /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */; };
+		45590C6CAEA4E5FDEC7BB8BFF847910B /* Pods-PayTrail-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D38C29159C04BE2E24F61CA29B516D71 /* Pods-PayTrail-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E164F18010ED0FFCB4E006CF43A2C1E /* Pods-PayTrailTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEB1BD5A9976C56234069A28D4C0DFF /* Pods-PayTrailTests-dummy.m */; };
+		4E24593D4E1F3C896F7EE75EFCD0D065 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6CADF2241ACC23C989926DE9806BC660 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		903A6228AA4F3099F8005A4BF11CEB86 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
+		B3D29419AB061EBC61B8637CFB8A57FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D0B3CB91C2947AC5B3BCBDA6982B4C98 /* Pods-PayTrail-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 203C1831729CB47312F2BA3E945664F1 /* Pods-PayTrail-dummy.m */; };
+		DE89756CF784208E8169AA3F79FB6B1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F1F94FD40D89F6CCF95F245825E646A3 /* Pods-PayTrailUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D52418B0C46280F2E2190D9AE537E41 /* Pods-PayTrailUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		190D106F3E61648ABF7CC9288408BF73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 054BFC040501ACB03E8F99EAF67906E1;
+			remoteInfo = SwiftyJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00C8CABB0A331B0026B90F354C55A51C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05813B8C6F923BFB9A940B3C89132FC8 /* Pods-PayTrailTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PayTrailTests-umbrella.h"; sourceTree = "<group>"; };
+		05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		081401FAA7FFC1DAC78A977B95AE497B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A5F8B8BAE5AE5F6F7634EC2F62E29A4 /* Pods-PayTrailUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayTrailUITests-resources.sh"; sourceTree = "<group>"; };
+		0EEE9AF9346F846607C4B8477163ECDF /* Pods-PayTrail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayTrail.release.xcconfig"; sourceTree = "<group>"; };
+		109341A05897BCD35E291A350E7E8566 /* Pods-PayTrailUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PayTrailUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1C4B4CD0B1CA983DA1F61FFC793EBA90 /* Pods-PayTrail.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PayTrail.modulemap"; sourceTree = "<group>"; };
+		203C1831729CB47312F2BA3E945664F1 /* Pods-PayTrail-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PayTrail-dummy.m"; sourceTree = "<group>"; };
+		2809B1EC01E372AE4B473361CA5EBBE6 /* Pods-PayTrailTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayTrailTests-resources.sh"; sourceTree = "<group>"; };
+		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		3579726FD4E773F1356396EA47E4A1D8 /* Pods-PayTrailTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayTrailTests.release.xcconfig"; sourceTree = "<group>"; };
+		365697B310F5B5C8EA69DC7330C4E1FC /* Pods-PayTrail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayTrail.debug.xcconfig"; sourceTree = "<group>"; };
+		3D52418B0C46280F2E2190D9AE537E41 /* Pods-PayTrailUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PayTrailUITests-dummy.m"; sourceTree = "<group>"; };
+		3E74F2EF259D028EE0F1F5268663E9BF /* Pods-PayTrail-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayTrail-resources.sh"; sourceTree = "<group>"; };
+		428537F54AE1D7B0C1BC8F031FEE0D99 /* Pods-PayTrailUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayTrailUITests-frameworks.sh"; sourceTree = "<group>"; };
+		47BE909A931FBF2508601C590F08989C /* Pods-PayTrailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayTrailTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4AD2CF1CDF6FFC58863BC2C0363B2EBB /* Pods-PayTrailTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayTrailTests-frameworks.sh"; sourceTree = "<group>"; };
+		4B23BF2765190E17D03391F30AF9EF7E /* Pods_PayTrailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PayTrailTests.framework; path = "Pods-PayTrailTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50505BD5F6CC23F9E31E956D9919ADF2 /* Pods-PayTrailTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PayTrailTests.modulemap"; sourceTree = "<group>"; };
+		57EA28C5AB8E0F15BF6248D485115425 /* Pods-PayTrailUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PayTrailUITests.modulemap"; sourceTree = "<group>"; };
+		5DEB1BD5A9976C56234069A28D4C0DFF /* Pods-PayTrailTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PayTrailTests-dummy.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67992DEFC11F3917C0CB15742A6BEB76 /* Pods-PayTrailTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PayTrailTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7E04C263595A2170105C161959ACB812 /* Pods-PayTrailUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayTrailUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		85920298B3CB639C316C706DBAF334A4 /* Pods_PayTrail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PayTrail.framework; path = "Pods-PayTrail.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8979617754517A61F393928BCFB6EE84 /* Pods_PayTrailUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PayTrailUITests.framework; path = "Pods-PayTrailUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1907F036F2453B488A94E8A99B3557 /* Pods-PayTrail-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PayTrail-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		979346369083149D594DDFE108296C75 /* Pods-PayTrailUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayTrailUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		BCAAE0C22DBC257836B15A4693E2716D /* Pods-PayTrail-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayTrail-frameworks.sh"; sourceTree = "<group>"; };
+		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		C0BE2993833A29E1904DFA863A879C48 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C940ECBD4F4E6FA9B8FD033B7C281DB1 /* Pods-PayTrail-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PayTrail-acknowledgements.plist"; sourceTree = "<group>"; };
+		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		D38C29159C04BE2E24F61CA29B516D71 /* Pods-PayTrail-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PayTrail-umbrella.h"; sourceTree = "<group>"; };
+		DD10812D538A47BD9BAB22F2F939A080 /* Pods-PayTrailUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PayTrailUITests-umbrella.h"; sourceTree = "<group>"; };
+		DD19280DF8259BE77381D52E146FADFF /* Pods-PayTrailUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PayTrailUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E7BCC25EFA43F57AA0F769C7974A073B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCDDB25E7377CF3708D909C02958E9DD /* Pods-PayTrailTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PayTrailTests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01496B5B7CD6F9ACD2BEC826E2CEE7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E24593D4E1F3C896F7EE75EFCD0D065 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B4A3D4CEAE40204423576DFB2CC264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D29419AB061EBC61B8637CFB8A57FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C35A8AD881A5845D6941E4FB5393E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25D5D85AD8A08C992E75D6BB115E5601 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28FA048458A8EF09ACDBB01DDDF0DF20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE89756CF784208E8169AA3F79FB6B1E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FFF6EC68BCF5B74B283FE48C3E07BB2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38217E4D170CDBF4F43BFDA065000B4B /* Pods-PayTrail */,
+				791B93732D73D520325CB072C965C425 /* Pods-PayTrailTests */,
+				DD355844BE7E49E7363C9B44D6960B2F /* Pods-PayTrailUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		38217E4D170CDBF4F43BFDA065000B4B /* Pods-PayTrail */ = {
+			isa = PBXGroup;
+			children = (
+				C0BE2993833A29E1904DFA863A879C48 /* Info.plist */,
+				1C4B4CD0B1CA983DA1F61FFC793EBA90 /* Pods-PayTrail.modulemap */,
+				8B1907F036F2453B488A94E8A99B3557 /* Pods-PayTrail-acknowledgements.markdown */,
+				C940ECBD4F4E6FA9B8FD033B7C281DB1 /* Pods-PayTrail-acknowledgements.plist */,
+				203C1831729CB47312F2BA3E945664F1 /* Pods-PayTrail-dummy.m */,
+				BCAAE0C22DBC257836B15A4693E2716D /* Pods-PayTrail-frameworks.sh */,
+				3E74F2EF259D028EE0F1F5268663E9BF /* Pods-PayTrail-resources.sh */,
+				D38C29159C04BE2E24F61CA29B516D71 /* Pods-PayTrail-umbrella.h */,
+				365697B310F5B5C8EA69DC7330C4E1FC /* Pods-PayTrail.debug.xcconfig */,
+				0EEE9AF9346F846607C4B8477163ECDF /* Pods-PayTrail.release.xcconfig */,
+			);
+			name = "Pods-PayTrail";
+			path = "Target Support Files/Pods-PayTrail";
+			sourceTree = "<group>";
+		};
+		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
+				8EC39E1DC11846207722B71AAFE40F98 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		791B93732D73D520325CB072C965C425 /* Pods-PayTrailTests */ = {
+			isa = PBXGroup;
+			children = (
+				081401FAA7FFC1DAC78A977B95AE497B /* Info.plist */,
+				50505BD5F6CC23F9E31E956D9919ADF2 /* Pods-PayTrailTests.modulemap */,
+				67992DEFC11F3917C0CB15742A6BEB76 /* Pods-PayTrailTests-acknowledgements.markdown */,
+				FCDDB25E7377CF3708D909C02958E9DD /* Pods-PayTrailTests-acknowledgements.plist */,
+				5DEB1BD5A9976C56234069A28D4C0DFF /* Pods-PayTrailTests-dummy.m */,
+				4AD2CF1CDF6FFC58863BC2C0363B2EBB /* Pods-PayTrailTests-frameworks.sh */,
+				2809B1EC01E372AE4B473361CA5EBBE6 /* Pods-PayTrailTests-resources.sh */,
+				05813B8C6F923BFB9A940B3C89132FC8 /* Pods-PayTrailTests-umbrella.h */,
+				47BE909A931FBF2508601C590F08989C /* Pods-PayTrailTests.debug.xcconfig */,
+				3579726FD4E773F1356396EA47E4A1D8 /* Pods-PayTrailTests.release.xcconfig */,
+			);
+			name = "Pods-PayTrailTests";
+			path = "Target Support Files/Pods-PayTrailTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
+				C6FEDA10863954E724BA887BA68DD7A8 /* Products */,
+				0FFF6EC68BCF5B74B283FE48C3E07BB2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8EC39E1DC11846207722B71AAFE40F98 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */,
+				D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */,
+				2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */,
+				32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */,
+				BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */,
+				05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C6FEDA10863954E724BA887BA68DD7A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85920298B3CB639C316C706DBAF334A4 /* Pods_PayTrail.framework */,
+				4B23BF2765190E17D03391F30AF9EF7E /* Pods_PayTrailTests.framework */,
+				8979617754517A61F393928BCFB6EE84 /* Pods_PayTrailUITests.framework */,
+				E7BCC25EFA43F57AA0F769C7974A073B /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DD355844BE7E49E7363C9B44D6960B2F /* Pods-PayTrailUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00C8CABB0A331B0026B90F354C55A51C /* Info.plist */,
+				57EA28C5AB8E0F15BF6248D485115425 /* Pods-PayTrailUITests.modulemap */,
+				109341A05897BCD35E291A350E7E8566 /* Pods-PayTrailUITests-acknowledgements.markdown */,
+				DD19280DF8259BE77381D52E146FADFF /* Pods-PayTrailUITests-acknowledgements.plist */,
+				3D52418B0C46280F2E2190D9AE537E41 /* Pods-PayTrailUITests-dummy.m */,
+				428537F54AE1D7B0C1BC8F031FEE0D99 /* Pods-PayTrailUITests-frameworks.sh */,
+				0A5F8B8BAE5AE5F6F7634EC2F62E29A4 /* Pods-PayTrailUITests-resources.sh */,
+				DD10812D538A47BD9BAB22F2F939A080 /* Pods-PayTrailUITests-umbrella.h */,
+				7E04C263595A2170105C161959ACB812 /* Pods-PayTrailUITests.debug.xcconfig */,
+				979346369083149D594DDFE108296C75 /* Pods-PayTrailUITests.release.xcconfig */,
+			);
+			name = "Pods-PayTrailUITests";
+			path = "Target Support Files/Pods-PayTrailUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4A7AA4B4CECE98FEA8BD229ECFFFB0A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A552DEA12A980C758BB73FA070BD5E7 /* Pods-PayTrailUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D9CB1DA3B81B18994A10407CF3501B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45590C6CAEA4E5FDEC7BB8BFF847910B /* Pods-PayTrail-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76C1504C95E12C68E2BEF649A8210E5F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D527F60F14F02F7E2B6B9A89644F35 /* Pods-PayTrailTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F97F565F6A40207A3EF8623B34CA4757 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CADF2241ACC23C989926DE9806BC660 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03A10362B29C695CD3B8256C574611F0 /* Pods-PayTrailUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D910C6C56CE652DDAA5F2318BE864947 /* Build configuration list for PBXNativeTarget "Pods-PayTrailUITests" */;
+			buildPhases = (
+				2C897490059501DF9004822F6CB8A4E8 /* Sources */,
+				28FA048458A8EF09ACDBB01DDDF0DF20 /* Frameworks */,
+				4A7AA4B4CECE98FEA8BD229ECFFFB0A6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PayTrailUITests";
+			productName = "Pods-PayTrailUITests";
+			productReference = 8979617754517A61F393928BCFB6EE84 /* Pods_PayTrailUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		054BFC040501ACB03E8F99EAF67906E1 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4C89C595F6C7A639C0049E7D3E33DBE /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				CD65B4FC5BA9F92B29953B7334BEA3DE /* Sources */,
+				07B4A3D4CEAE40204423576DFB2CC264 /* Frameworks */,
+				F97F565F6A40207A3EF8623B34CA4757 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = E7BCC25EFA43F57AA0F769C7974A073B /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		326AA65A6ABC08475BAF4F103A69F93E /* Pods-PayTrailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B4DFEF958DF669903330D33EC9A290A /* Build configuration list for PBXNativeTarget "Pods-PayTrailTests" */;
+			buildPhases = (
+				32D6C26A969CA7F2888DD028940BF94C /* Sources */,
+				01496B5B7CD6F9ACD2BEC826E2CEE7E8 /* Frameworks */,
+				76C1504C95E12C68E2BEF649A8210E5F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PayTrailTests";
+			productName = "Pods-PayTrailTests";
+			productReference = 4B23BF2765190E17D03391F30AF9EF7E /* Pods_PayTrailTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A43A667F996B3A04A3D219F7772F7F8E /* Pods-PayTrail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE4E148E6196585AC6DE6FCE3404826 /* Build configuration list for PBXNativeTarget "Pods-PayTrail" */;
+			buildPhases = (
+				98B9CD0AD17311734471F8803F77AA58 /* Sources */,
+				0C35A8AD881A5845D6941E4FB5393E53 /* Frameworks */,
+				71D9CB1DA3B81B18994A10407CF3501B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B3A522D06DF743E16E4BA8C0CF2D28B /* PBXTargetDependency */,
+			);
+			name = "Pods-PayTrail";
+			productName = "Pods-PayTrail";
+			productReference = 85920298B3CB639C316C706DBAF334A4 /* Pods_PayTrail.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C6FEDA10863954E724BA887BA68DD7A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A43A667F996B3A04A3D219F7772F7F8E /* Pods-PayTrail */,
+				326AA65A6ABC08475BAF4F103A69F93E /* Pods-PayTrailTests */,
+				03A10362B29C695CD3B8256C574611F0 /* Pods-PayTrailUITests */,
+				054BFC040501ACB03E8F99EAF67906E1 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C897490059501DF9004822F6CB8A4E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F94FD40D89F6CCF95F245825E646A3 /* Pods-PayTrailUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D6C26A969CA7F2888DD028940BF94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E164F18010ED0FFCB4E006CF43A2C1E /* Pods-PayTrailTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B9CD0AD17311734471F8803F77AA58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B3CB91C2947AC5B3BCBDA6982B4C98 /* Pods-PayTrail-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD65B4FC5BA9F92B29953B7334BEA3DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B8839E09ACF6D4D6C952D0A82AA5EDD /* SwiftyJSON-dummy.m in Sources */,
+				903A6228AA4F3099F8005A4BF11CEB86 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B3A522D06DF743E16E4BA8C0CF2D28B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 054BFC040501ACB03E8F99EAF67906E1 /* SwiftyJSON */;
+			targetProxy = 190D106F3E61648ABF7CC9288408BF73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1839665045A5BE134A9A9B72605D4D2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		24C15B0F7D12FD0D35B5EF3236CA2127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47BE909A931FBF2508601C590F08989C /* Pods-PayTrailTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PayTrailTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PayTrailTests/Pods-PayTrailTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PayTrailTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2A6115CF5A43CCF3D62EF51A07A88A97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E04C263595A2170105C161959ACB812 /* Pods-PayTrailUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PayTrailUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PayTrailUITests/Pods-PayTrailUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PayTrailUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7C103B5872BB08BA406AD5306C0BA4D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 979346369083149D594DDFE108296C75 /* Pods-PayTrailUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PayTrailUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PayTrailUITests/Pods-PayTrailUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PayTrailUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9CABF65CBCFD6F56140A0E689802FD90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EEE9AF9346F846607C4B8477163ECDF /* Pods-PayTrail.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PayTrail/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PayTrail/Pods-PayTrail.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PayTrail;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C4B67AB98183F03B8A50D729C96EEE5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 365697B310F5B5C8EA69DC7330C4E1FC /* Pods-PayTrail.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PayTrail/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PayTrail/Pods-PayTrail.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PayTrail;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE48B62ECDC7F681C3640B6EFF34628F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3579726FD4E773F1356396EA47E4A1D8 /* Pods-PayTrailTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PayTrailTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PayTrailTests/Pods-PayTrailTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PayTrailTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD1EB7BE4EEDAFA5B6750665D113F18C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B4DFEF958DF669903330D33EC9A290A /* Build configuration list for PBXNativeTarget "Pods-PayTrailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C15B0F7D12FD0D35B5EF3236CA2127 /* Debug */,
+				EE48B62ECDC7F681C3640B6EFF34628F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE4E148E6196585AC6DE6FCE3404826 /* Build configuration list for PBXNativeTarget "Pods-PayTrail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B67AB98183F03B8A50D729C96EEE5A /* Debug */,
+				9CABF65CBCFD6F56140A0E689802FD90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D910C6C56CE652DDAA5F2318BE864947 /* Build configuration list for PBXNativeTarget "Pods-PayTrailUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A6115CF5A43CCF3D62EF51A07A88A97 /* Debug */,
+				7C103B5872BB08BA406AD5306C0BA4D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4C89C595F6C7A639C0049E7D3E33DBE /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1839665045A5BE134A9A9B72605D4D2F /* Debug */,
+				FD1EB7BE4EEDAFA5B6750665D113F18C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

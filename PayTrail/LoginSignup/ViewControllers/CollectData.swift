@@ -55,6 +55,11 @@ class CollectData: UIViewController {
         if sender.isOn == false
         {
             getOvertimeHours.text = ""
+            getOvertimeHours.resignFirstResponder()
+        }
+        else
+        {
+            getOvertimeHours.becomeFirstResponder()
         }
         
     }
@@ -65,6 +70,11 @@ class CollectData: UIViewController {
         if sender.isOn == false
         {
             getStateHolidays.text = ""
+            getStateHolidays.resignFirstResponder()
+        }
+        else
+        {
+            getStateHolidays.becomeFirstResponder()
         }
     }
     
@@ -74,6 +84,11 @@ class CollectData: UIViewController {
         if sender.isOn == false
         {
             getSickHours.text = ""
+            getSickHours.resignFirstResponder()
+        }
+        else
+        {
+            getSickHours.becomeFirstResponder()
         }
     }
     

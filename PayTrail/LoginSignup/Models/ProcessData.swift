@@ -38,25 +38,26 @@ class ProcessData : NSObject
     public var YEAR_INCOME = Double()
     public var DISPLAY_WAGE = Double()
     public var DISPLAY_YEAR_INCOME = Double()
+    public var DISPLAY_TOTAL_TAX = Double()
 
     init(getRegularHours:Double,getHourRate:Double,getOvertimeHours:Double,getStateHolidays:Double,getSickHours:Double,getWeeks:Double)
     {
+//
+//        REGULAR_HOURS = getRegularHours
+//        RATE = getHourRate
+//        OVERTIME_HOURS = getOvertimeHours
+//        STATE_HOLIDAY_HOURS = getStateHolidays
+//        SICK_HOURS = getSickHours
         
-        REGULAR_HOURS = getRegularHours
-        RATE = getHourRate
-        OVERTIME_HOURS = getOvertimeHours
-        STATE_HOLIDAY_HOURS = getStateHolidays
-        SICK_HOURS = getSickHours
         WEEKS = getWeeks
 
-//        REGULAR_HOURS = 40
-//        RATE = 14
-//        OVERTIME_HOURS = 5
-//        STATE_HOLIDAY_HOURS = 5
-//        SICK_HOURS = 5
+        REGULAR_HOURS = 44.72
+        RATE = 14
+        OVERTIME_HOURS = 0
+        STATE_HOLIDAY_HOURS = 6.82
+        SICK_HOURS = 0
         
-        
-        print(getWeeks)
+
         
         REGULAR_WAGE = REGULAR_HOURS * RATE
         OVERTIME_WAGE = OVERTIME_HOURS * RATE * 1.5
@@ -65,7 +66,6 @@ class ProcessData : NSObject
         
         DISPLAY_WAGE = REGULAR_HOURS * RATE
         WAGE = REGULAR_WAGE + OVERTIME_WAGE + STATE_HOLIDAY_WAGE + SICK_WAGE
-        print(WAGE)
         VACATION_PAY = WAGE * 0.04
         
         GROSS_INCOME = WAGE + VACATION_PAY
@@ -83,9 +83,9 @@ class ProcessData : NSObject
         }
         
         EMPLOYEMENT_INSURANCE = (0.0166 * YEAR_INCOME)/WEEKS
-        print("EI : ",EMPLOYEMENT_INSURANCE)
         
-        
+        YEAR_INCOME = YEAR_INCOME - (VACATION_PAY * WEEKS)
+
         var R = Double()
         var K = Double()
         
@@ -127,6 +127,9 @@ class ProcessData : NSObject
             FEDERAL_TAX = 0
         }
         
+        
+//        YEAR_INCOME = YEAR_INCOME + (VACATION_PAY * WEEKS)
+
         var V = Double()
         var KP = Double()
         
@@ -168,25 +171,40 @@ class ProcessData : NSObject
             PROVISIONAL_TAX = 0
         }
 
+        DISPLAY_TOTAL_TAX = PROVISIONAL_TAX + FEDERAL_TAX
+        
         TOTAL_DEDUCTION = CPP + EMPLOYEMENT_INSURANCE + FEDERAL_TAX + PROVISIONAL_TAX
         NET_AMOUNT = GROSS_INCOME - TOTAL_DEDUCTION
         
         DISPLAY_YEAR_INCOME = NET_AMOUNT * 12
         
+        
+        
         let numberOfPoints:Double = 100
         
+        
+        
+        
         //Decrease Points
-        WAGE = Double(round(numberOfPoints * WAGE)/numberOfPoints)
+        REGULAR_HOURS = Double(round(numberOfPoints * REGULAR_HOURS)/numberOfPoints)
+        RATE = Double(round(numberOfPoints * RATE)/numberOfPoints)
+        OVERTIME_HOURS = Double(round(numberOfPoints * OVERTIME_HOURS)/numberOfPoints)
+        STATE_HOLIDAY_HOURS = Double(round(numberOfPoints * STATE_HOLIDAY_HOURS)/numberOfPoints)
+        SICK_HOURS = Double(round(numberOfPoints * SICK_HOURS)/numberOfPoints)
+
+        
+        DISPLAY_WAGE = Double(round(numberOfPoints * DISPLAY_WAGE)/numberOfPoints)
         OVERTIME_WAGE = Double(round(numberOfPoints * OVERTIME_WAGE)/numberOfPoints)
         STATE_HOLIDAY_WAGE = Double(round(numberOfPoints * STATE_HOLIDAY_WAGE)/numberOfPoints)
         OVERTIME_WAGE = Double(round(numberOfPoints * OVERTIME_WAGE)/numberOfPoints)
+        SICK_WAGE = Double(round(numberOfPoints * SICK_WAGE)/numberOfPoints)
         VACATION_PAY = Double(round(numberOfPoints * VACATION_PAY)/numberOfPoints)
         GROSS_INCOME = Double(round(numberOfPoints * GROSS_INCOME)/numberOfPoints)
         CPP = Double(round(numberOfPoints * CPP)/numberOfPoints)
         EMPLOYEMENT_INSURANCE = Double(round(numberOfPoints * EMPLOYEMENT_INSURANCE)/numberOfPoints)
         FEDERAL_TAX = Double(round(numberOfPoints * FEDERAL_TAX)/numberOfPoints)
-        
         PROVISIONAL_TAX = Double(round(numberOfPoints * PROVISIONAL_TAX)/numberOfPoints)
+        DISPLAY_TOTAL_TAX = Double(round(numberOfPoints * DISPLAY_TOTAL_TAX)/numberOfPoints)
         TOTAL_DEDUCTION = Double(round(numberOfPoints * TOTAL_DEDUCTION)/numberOfPoints)
         NET_AMOUNT = Double(round(numberOfPoints * NET_AMOUNT)/numberOfPoints)
      
@@ -196,4 +214,5 @@ class ProcessData : NSObject
 
 
     }
+    
 }

@@ -28,8 +28,9 @@ class DisplayData: UITableViewController {
             ["title":"Gross Income","data":"data","key":"GROSS_INCOME"],
             ["title":"CPP (Pension Plan)","data":"data","key":"CPP"],
             ["title":"Employement Insurance","data":"data","key":"EMPLOYEMENT_INSURANCE"],
-            ["title":"Federal Tax","data":"data","key":"FEDERAL_TAX"],
-            ["title":"Provisional Tax","data":"data","key":"PROVISIONAL_TAX"],
+            ["title":"Tax","data":"data","key":"DISPLAY_TOTAL_TAX"],
+            ["title":"     Federal Tax","data":"data","key":"FEDERAL_TAX"],
+            ["title":"     Provisional Tax","data":"data","key":"PROVISIONAL_TAX"],
             ["title":"Total Deduction","data":"data","key":"TOTAL_DEDUCTION"],
             ["title":"Net Amount","data":"data","key":"NET_AMOUNT"],
             ["title":"Year Income","data":"data","key":"DISPLAY_YEAR_INCOME"] ]
@@ -73,11 +74,14 @@ class DisplayData: UITableViewController {
         SalaryDetailsDict[5]["data"] = String(calculatedData!.GROSS_INCOME)
         SalaryDetailsDict[6]["data"] = String(calculatedData!.CPP)
         SalaryDetailsDict[7]["data"] = String(calculatedData!.EMPLOYEMENT_INSURANCE)
-        SalaryDetailsDict[8]["data"] = String(calculatedData!.FEDERAL_TAX)
-        SalaryDetailsDict[9]["data"] = String(calculatedData!.PROVISIONAL_TAX)
-        SalaryDetailsDict[10]["data"] = String(calculatedData!.TOTAL_DEDUCTION)
-        SalaryDetailsDict[11]["data"] = String(calculatedData!.NET_AMOUNT)
-        SalaryDetailsDict[12]["data"] = String(calculatedData!.DISPLAY_YEAR_INCOME)
+        SalaryDetailsDict[8]["data"] = String(calculatedData!.DISPLAY_TOTAL_TAX)
+        SalaryDetailsDict[9]["data"] = String(calculatedData!.FEDERAL_TAX)
+        SalaryDetailsDict[10]["data"] = String(calculatedData!.PROVISIONAL_TAX)
+        SalaryDetailsDict[11]["data"] = String(calculatedData!.TOTAL_DEDUCTION)
+        SalaryDetailsDict[12]["data"] = String(calculatedData!.NET_AMOUNT)
+        SalaryDetailsDict[13]["data"] = String(calculatedData!.DISPLAY_YEAR_INCOME)
+        
+        
         
 
 
@@ -123,13 +127,26 @@ class DisplayData: UITableViewController {
         else
         {
             cell.title.text = SalaryDetailsDict[indexPath.row]["title"]
-            cell.data.text = SalaryDetailsDict[indexPath.row]["data"]
+            cell.data.text = String(SalaryDetailsDict[indexPath.row]["data"]! + "$")
         }
         if indexPath.section == 1
         {
             if (indexPath.row >= 6 && indexPath.row <= 10 )
             {
                 cell.data.textColor = UIColor.red
+                
+                
+                if (indexPath.row == 9 || indexPath.row == 10)
+                {
+                    cell.title.textColor = UIColor.gray
+                    cell.data.textColor = UIColor(red:1.00, green:0.26, blue:0.26, alpha:1.0)
+                    
+                    cell.title.font = UIFont.systemFont(ofSize: cell.title.font.pointSize - 1)
+                    cell.data.font = UIFont.systemFont(ofSize: cell.title.font.pointSize - 1)
+
+                    //cell.title.font = cell.title.font.pointSize - 10
+                    
+                }
             }
             else if (indexPath.row >= 0 && indexPath.row <= 5 || indexPath.row == 11)
             {
@@ -137,13 +154,17 @@ class DisplayData: UITableViewController {
                 
                 //For UICOLOR code
                 //http://uicolor.xyz/#/rgb-to-ui
+
             }
-            
             
         }
 
-        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        
     }
 
 }

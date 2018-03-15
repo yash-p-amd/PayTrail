@@ -24,8 +24,19 @@ class LoginSignup: UIViewController {
     
     @IBAction func loginBtn(_ sender: UIButton) {
         
-        
+        LiveTaxRates.sharedInstance.fetchListInfo(onSuccess: onSuccessScenario, onFail: onFailScenario)
+
         
     }
     
+    private func onSuccessScenario() {
+        DispatchQueue.main.async {
+            //self.collectionView.reloadData()
+        }
+    }
+    
+    private func onFailScenario(errorMessage: String) {
+        print(errorMessage)
+    }
+ 
 }
