@@ -141,9 +141,10 @@ class DisplayData: UITableViewController {
                     cell.title.textColor = UIColor.gray
                     cell.data.textColor = UIColor(red:1.00, green:0.26, blue:0.26, alpha:1.0)
                     
-                    cell.title.font = UIFont.systemFont(ofSize: cell.title.font.pointSize - 1)
-                    cell.data.font = UIFont.systemFont(ofSize: cell.title.font.pointSize - 1)
-
+//                    cell.title.font = UIFont.systemFont(ofSize: cell.title.font.pointSize - 1)
+//                    cell.data.font = UIFont.systemFont(ofSize: cell.title.font.pointSize - 1)
+                    cell.title.font = UIFont.systemFont(ofSize: 15)
+                    cell.data.font = UIFont.systemFont(ofSize: 15)
                     //cell.title.font = cell.title.font.pointSize - 10
                     
                 }

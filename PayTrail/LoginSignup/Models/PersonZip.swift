@@ -11,6 +11,14 @@ import Foundation
 
 public class PersonZip {
     
+    //Var Values from Network
+//    public let OVERTIME_MULTI : Double
+//    public let VACATIONPAY_MULTI : Double
+//    public let CPP_MULTI : Double
+//    public let CPP_MINUS : Double
+//    public let EMPLOYEMENT_INSURANCE_MULTI : Double
+    
+    
     public let firstName: String
     public let lastName: String
     public let street: String

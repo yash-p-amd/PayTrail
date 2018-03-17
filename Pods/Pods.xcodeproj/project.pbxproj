@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,7 +40,7 @@
 		0A5F8B8BAE5AE5F6F7634EC2F62E29A4 /* Pods-PayTrailUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayTrailUITests-resources.sh"; sourceTree = "<group>"; };
 		0EEE9AF9346F846607C4B8477163ECDF /* Pods-PayTrail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayTrail.release.xcconfig"; sourceTree = "<group>"; };
 		109341A05897BCD35E291A350E7E8566 /* Pods-PayTrailUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PayTrailUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1C4B4CD0B1CA983DA1F61FFC793EBA90 /* Pods-PayTrail.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PayTrail.modulemap"; sourceTree = "<group>"; };
+		1C4B4CD0B1CA983DA1F61FFC793EBA90 /* Pods-PayTrail.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PayTrail.modulemap"; sourceTree = "<group>"; };
 		203C1831729CB47312F2BA3E945664F1 /* Pods-PayTrail-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PayTrail-dummy.m"; sourceTree = "<group>"; };
 		2809B1EC01E372AE4B473361CA5EBBE6 /* Pods-PayTrailTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayTrailTests-resources.sh"; sourceTree = "<group>"; };
 		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
@@ -52,17 +52,17 @@
 		428537F54AE1D7B0C1BC8F031FEE0D99 /* Pods-PayTrailUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayTrailUITests-frameworks.sh"; sourceTree = "<group>"; };
 		47BE909A931FBF2508601C590F08989C /* Pods-PayTrailTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayTrailTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AD2CF1CDF6FFC58863BC2C0363B2EBB /* Pods-PayTrailTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayTrailTests-frameworks.sh"; sourceTree = "<group>"; };
-		4B23BF2765190E17D03391F30AF9EF7E /* Pods_PayTrailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PayTrailTests.framework; path = "Pods-PayTrailTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50505BD5F6CC23F9E31E956D9919ADF2 /* Pods-PayTrailTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PayTrailTests.modulemap"; sourceTree = "<group>"; };
-		57EA28C5AB8E0F15BF6248D485115425 /* Pods-PayTrailUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PayTrailUITests.modulemap"; sourceTree = "<group>"; };
+		4B23BF2765190E17D03391F30AF9EF7E /* Pods_PayTrailTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayTrailTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50505BD5F6CC23F9E31E956D9919ADF2 /* Pods-PayTrailTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PayTrailTests.modulemap"; sourceTree = "<group>"; };
+		57EA28C5AB8E0F15BF6248D485115425 /* Pods-PayTrailUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PayTrailUITests.modulemap"; sourceTree = "<group>"; };
 		5DEB1BD5A9976C56234069A28D4C0DFF /* Pods-PayTrailTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PayTrailTests-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		67992DEFC11F3917C0CB15742A6BEB76 /* Pods-PayTrailTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PayTrailTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7E04C263595A2170105C161959ACB812 /* Pods-PayTrailUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayTrailUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		85920298B3CB639C316C706DBAF334A4 /* Pods_PayTrail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PayTrail.framework; path = "Pods-PayTrail.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8979617754517A61F393928BCFB6EE84 /* Pods_PayTrailUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PayTrailUITests.framework; path = "Pods-PayTrailUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85920298B3CB639C316C706DBAF334A4 /* Pods_PayTrail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayTrail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8979617754517A61F393928BCFB6EE84 /* Pods_PayTrailUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayTrailUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1907F036F2453B488A94E8A99B3557 /* Pods-PayTrail-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PayTrail-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		979346369083149D594DDFE108296C75 /* Pods-PayTrailUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PayTrailUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		BCAAE0C22DBC257836B15A4693E2716D /* Pods-PayTrail-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayTrail-frameworks.sh"; sourceTree = "<group>"; };
@@ -70,11 +70,11 @@
 		C0BE2993833A29E1904DFA863A879C48 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C940ECBD4F4E6FA9B8FD033B7C281DB1 /* Pods-PayTrail-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PayTrail-acknowledgements.plist"; sourceTree = "<group>"; };
-		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		D38C29159C04BE2E24F61CA29B516D71 /* Pods-PayTrail-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PayTrail-umbrella.h"; sourceTree = "<group>"; };
 		DD10812D538A47BD9BAB22F2F939A080 /* Pods-PayTrailUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PayTrailUITests-umbrella.h"; sourceTree = "<group>"; };
 		DD19280DF8259BE77381D52E146FADFF /* Pods-PayTrailUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PayTrailUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E7BCC25EFA43F57AA0F769C7974A073B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7BCC25EFA43F57AA0F769C7974A073B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCDDB25E7377CF3708D909C02958E9DD /* Pods-PayTrailTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PayTrailTests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,7 +148,6 @@
 				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
 				8EC39E1DC11846207722B71AAFE40F98 /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -362,7 +361,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -669,6 +668,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
