@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		59CACB43FE90F632CB0CDE16 /* Pods_PayTrailTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145C04733DCD5E1C2692139D /* Pods_PayTrailTests.framework */; };
 		6B1710066AD114D91CD33554 /* Pods_PayTrailUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67109B18262262C057380E62 /* Pods_PayTrailUITests.framework */; };
-		CC3DA276205DA5E100D55F1A /* HTYTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3DA277205DA5E100D55F1A /* HTYTextField.framework */; };
 		CC4439D3205A1B0B00543361 /* LiveTaxRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4439D2205A1B0B00543361 /* LiveTaxRates.swift */; };
 		CC4439D4205A213D00543361 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4439D5205A213D00543361 /* SwiftyJSON.framework */; };
 		CC4439D7205A253A00543361 /* PersonZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4439D6205A253A00543361 /* PersonZip.swift */; };
@@ -82,7 +81,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC3DA276205DA5E100D55F1A /* HTYTextField.framework in Frameworks */,
 				CC4439D4205A213D00543361 /* SwiftyJSON.framework in Frameworks */,
 				F3E6D1FB091213D345C0C767 /* Pods_PayTrail.framework in Frameworks */,
 			);
@@ -483,12 +481,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PayTrail/Pods-PayTrail-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HTYTextField/HTYTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTYTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

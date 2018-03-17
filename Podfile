@@ -7,7 +7,6 @@ target 'PayTrail' do
 
   # Pods for PayTrail
     	pod 'SwiftyJSON'
-	pod 'HTYTextField'
 
   target 'PayTrailTests' do
     inherit! :search_paths

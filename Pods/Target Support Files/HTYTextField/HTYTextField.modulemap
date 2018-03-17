@@ -1,6 +1,0 @@
-framework module HTYTextField {
-  umbrella header "HTYTextField-umbrella.h"
-
-  export *
-  module * { export * }
-}
