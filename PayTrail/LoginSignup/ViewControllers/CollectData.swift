@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HTYTextField
 
 class CollectData: UIViewController {
     
@@ -25,6 +26,8 @@ class CollectData: UIViewController {
         pickerView.selectRow(0, inComponent: 0, animated: false)
         getWeeks.inputView = pickerView
         getWeeks.text = weekOptions[pickerView.selectedRow(inComponent: 0)]
+        
+        
         
     }
     

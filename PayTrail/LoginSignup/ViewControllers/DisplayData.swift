@@ -130,6 +130,8 @@ class DisplayData: UITableViewController {
             cell.data.text = String(SalaryDetailsDict[indexPath.row]["data"]! + " $")
         }
         
+        //For UICOLOR code
+        //http://uicolor.xyz/#/rgb-to-ui
         if indexPath.section == 1 {
             
             if SalaryDetailsDict[indexPath.row]["color"] == "green" {
@@ -142,43 +144,7 @@ class DisplayData: UITableViewController {
                 cell.title.textColor = UIColor.gray
                 cell.data.textColor = UIColor(red:1.00, green:0.26, blue:0.26, alpha:1.0)
             }
-            
-            
         }
-        
-        
-        
-//        if indexPath.section == 1
-//        {
-//            if (indexPath.row >= 6 && indexPath.row <= 10 )
-//            {
-//                cell.data.textColor = UIColor.red
-//
-//
-//                if (indexPath.row == 9 || indexPath.row == 10)
-//                {
-//                    cell.title.textColor = UIColor.gray
-//                    cell.data.textColor = UIColor(red:1.00, green:0.26, blue:0.26, alpha:1.0)
-//
-////                    cell.title.font = UIFont.systemFont(ofSize: cell.title.font.pointSize - 1)
-////                    cell.data.font = UIFont.systemFont(ofSize: cell.title.font.pointSize - 1)
-//                    cell.title.font = UIFont.systemFont(ofSize: 15)
-//                    cell.data.font = UIFont.systemFont(ofSize: 15)
-//                    //cell.title.font = cell.title.font.pointSize - 10
-//
-//                }
-//            }
-//            else if (indexPath.row >= 0 && indexPath.row <= 5 || indexPath.row == 11)
-//            {
-//                cell.data.textColor = UIColor(red:0.27, green:0.62, blue:0.26, alpha:1.0)
-//
-//                //For UICOLOR code
-//                //http://uicolor.xyz/#/rgb-to-ui
-//
-//            }
-//
-//        }
-
         return cell
     }
     
