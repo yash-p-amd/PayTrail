@@ -42,20 +42,20 @@ class ProcessData : NSObject
 
     init(getRegularHours:Double,getHourRate:Double,getOvertimeHours:Double,getStateHolidays:Double,getSickHours:Double,getWeeks:Double)
     {
-//
-//        REGULAR_HOURS = getRegularHours
-//        RATE = getHourRate
-//        OVERTIME_HOURS = getOvertimeHours
-//        STATE_HOLIDAY_HOURS = getStateHolidays
-//        SICK_HOURS = getSickHours
+
+        REGULAR_HOURS = getRegularHours
+        RATE = getHourRate
+        OVERTIME_HOURS = getOvertimeHours
+        STATE_HOLIDAY_HOURS = getStateHolidays
+        SICK_HOURS = getSickHours
         
         WEEKS = getWeeks
 
-        REGULAR_HOURS = 44.72
-        RATE = 14
-        OVERTIME_HOURS = 0
-        STATE_HOLIDAY_HOURS = 6.82
-        SICK_HOURS = 0
+//        REGULAR_HOURS = 44.72
+//        RATE = 14
+//        OVERTIME_HOURS = 0
+//        STATE_HOLIDAY_HOURS = 6.82
+//        SICK_HOURS = 0
         
 
         
