@@ -20,20 +20,20 @@ class DisplayData: UITableViewController {
 
     
     var SalaryDetailsDict =
-        [   ["title":"Wage","data":"data","key":"WAGE"],
-            ["title":"Overtime Wage","data":"data","key":"OVERTIME_WAGE"],
-            ["title":"State Holiday Wage","data":"data","key":"STATE_HOLIDAY_WAGE"],
-            ["title":"E/S Wage","data":"data","key":"STATE_HOLIDAY_WAGE"],
-            ["title":"Vacation Pay","data":"data","key":"VACATION_PAY"],
-            ["title":"Gross Income","data":"data","key":"GROSS_INCOME"],
-            ["title":"CPP (Pension Plan)","data":"data","key":"CPP"],
-            ["title":"Employement Insurance","data":"data","key":"EMPLOYEMENT_INSURANCE"],
-            ["title":"Tax","data":"data","key":"DISPLAY_TOTAL_TAX"],
-            ["title":"     Federal Tax","data":"data","key":"FEDERAL_TAX"],
-            ["title":"     Provisional Tax","data":"data","key":"PROVISIONAL_TAX"],
-            ["title":"Total Deduction","data":"data","key":"TOTAL_DEDUCTION"],
-            ["title":"Net Amount","data":"data","key":"NET_AMOUNT"],
-            ["title":"Year Income","data":"data","key":"DISPLAY_YEAR_INCOME"] ]
+        [   ["title":"Wage","data":"data","color":"green"],
+            ["title":"Overtime Wage","data":"data","key":"OVERTIME_WAGE","color":"green"],
+            ["title":"State Holiday Wage","data":"data","key":"STATE_HOLIDAY_WAGE","color":"green"],
+            ["title":"E/S Wage","data":"data","key":"STATE_HOLIDAY_WAGE","color":"green"],
+            ["title":"Vacation Pay","data":"data","key":"VACATION_PAY","color":"green"],
+            ["title":"Gross Income","data":"data","key":"GROSS_INCOME","color":"green"],
+            ["title":"CPP (Pension Plan)","data":"data","key":"CPP","color":"red"],
+            ["title":"Employement Insurance","data":"data","key":"EMPLOYEMENT_INSURANCE","color":"red"],
+            ["title":"Tax","data":"data","key":"DISPLAY_TOTAL_TAX","color":"red"],
+            ["title":"     Federal Tax","data":"data","key":"FEDERAL_TAX","color":"grayred"],
+            ["title":"     Provisional Tax","data":"data","key":"PROVISIONAL_TAX","color":"grayred"],
+            ["title":"Total Deduction","data":"data","key":"TOTAL_DEDUCTION","color":"red"],
+            ["title":"Net Amount","data":"data","key":"NET_AMOUNT","color":"green"],
+            ["title":"Year Income","data":"data","key":"DISPLAY_YEAR_INCOME","color":"no"] ]
 
     
 
@@ -127,38 +127,57 @@ class DisplayData: UITableViewController {
         else
         {
             cell.title.text = SalaryDetailsDict[indexPath.row]["title"]
-            cell.data.text = String(SalaryDetailsDict[indexPath.row]["data"]! + "$")
+            cell.data.text = String(SalaryDetailsDict[indexPath.row]["data"]! + " $")
         }
-        if indexPath.section == 1
-        {
-            if (indexPath.row >= 6 && indexPath.row <= 10 )
-            {
-                cell.data.textColor = UIColor.red
-                
-                
-                if (indexPath.row == 9 || indexPath.row == 10)
-                {
-                    cell.title.textColor = UIColor.gray
-                    cell.data.textColor = UIColor(red:1.00, green:0.26, blue:0.26, alpha:1.0)
-                    
-//                    cell.title.font = UIFont.systemFont(ofSize: cell.title.font.pointSize - 1)
-//                    cell.data.font = UIFont.systemFont(ofSize: cell.title.font.pointSize - 1)
-                    cell.title.font = UIFont.systemFont(ofSize: 15)
-                    cell.data.font = UIFont.systemFont(ofSize: 15)
-                    //cell.title.font = cell.title.font.pointSize - 10
-                    
-                }
-            }
-            else if (indexPath.row >= 0 && indexPath.row <= 5 || indexPath.row == 11)
-            {
+        
+        if indexPath.section == 1 {
+            
+            if SalaryDetailsDict[indexPath.row]["color"] == "green" {
                 cell.data.textColor = UIColor(red:0.27, green:0.62, blue:0.26, alpha:1.0)
-                
-                //For UICOLOR code
-                //http://uicolor.xyz/#/rgb-to-ui
-
+            }
+            else if SalaryDetailsDict[indexPath.row]["color"] == "red" {
+                cell.data.textColor = UIColor.red
+            }
+            else if SalaryDetailsDict[indexPath.row]["color"] == "grayred" {
+                cell.title.textColor = UIColor.gray
+                cell.data.textColor = UIColor(red:1.00, green:0.26, blue:0.26, alpha:1.0)
             }
             
+            
         }
+        
+        
+        
+//        if indexPath.section == 1
+//        {
+//            if (indexPath.row >= 6 && indexPath.row <= 10 )
+//            {
+//                cell.data.textColor = UIColor.red
+//
+//
+//                if (indexPath.row == 9 || indexPath.row == 10)
+//                {
+//                    cell.title.textColor = UIColor.gray
+//                    cell.data.textColor = UIColor(red:1.00, green:0.26, blue:0.26, alpha:1.0)
+//
+////                    cell.title.font = UIFont.systemFont(ofSize: cell.title.font.pointSize - 1)
+////                    cell.data.font = UIFont.systemFont(ofSize: cell.title.font.pointSize - 1)
+//                    cell.title.font = UIFont.systemFont(ofSize: 15)
+//                    cell.data.font = UIFont.systemFont(ofSize: 15)
+//                    //cell.title.font = cell.title.font.pointSize - 10
+//
+//                }
+//            }
+//            else if (indexPath.row >= 0 && indexPath.row <= 5 || indexPath.row == 11)
+//            {
+//                cell.data.textColor = UIColor(red:0.27, green:0.62, blue:0.26, alpha:1.0)
+//
+//                //For UICOLOR code
+//                //http://uicolor.xyz/#/rgb-to-ui
+//
+//            }
+//
+//        }
 
         return cell
     }
