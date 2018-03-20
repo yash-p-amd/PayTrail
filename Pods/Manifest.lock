@@ -1,12 +1,15 @@
 PODS:
+  - JVFloatLabeledTextField (1.2.1)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
+  - JVFloatLabeledTextField
   - SwiftyJSON
 
 SPEC CHECKSUMS:
+  JVFloatLabeledTextField: cfc44e3c4d493b2ed92ede8035e8e89c2912ba64
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: b3e1701db3747698f28ca320e9c185e6563ce562
+PODFILE CHECKSUM: 31c9d6165425e3ba3c43c5fdc93fb01d8be10de1
 
 COCOAPODS: 1.4.0

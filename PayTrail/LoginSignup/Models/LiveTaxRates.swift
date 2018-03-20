@@ -70,23 +70,23 @@ class LiveTaxRates: NSObject {
         
         let newJson = try JSON(data: ddata)
         
-        print(newJson["results"][0]["email"])
-        
-        if let userName = newJson["results"][0]["email"].string
-        {
-            print(userName)
-        }
-        else
-        {
-            print(newJson["results"]["email"])
-        }
-        
-        print(newJson["results"].count)
-        
-        for newJsonAgain in newJson["results"]
-        {
-            print(newJsonAgain.1["email"])
-        }
+//        print(newJson["results"][0]["email"])
+//        
+//        if let userName = newJson["results"][0]["email"].string
+//        {
+//            print(userName)
+//        }
+//        else
+//        {
+//            print(newJson["results"]["email"])
+//        }
+//        
+//        print(newJson["results"].count)
+//        
+//        for newJsonAgain in newJson["results"]
+//        {
+//            print(newJsonAgain.1["email"])
+//        }
         
         
         
