@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0920"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A43A667F996B3A04A3D219F7772F7F8E"
+               BlueprintIdentifier = "691E18696D008A22C49A6321B7AAE13D"
                BuildableName = "Pods_PayTrail.framework"
                BlueprintName = "Pods-PayTrail"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A43A667F996B3A04A3D219F7772F7F8E"
+            BlueprintIdentifier = "691E18696D008A22C49A6321B7AAE13D"
             BuildableName = "Pods_PayTrail.framework"
             BlueprintName = "Pods-PayTrail"
             ReferencedContainer = "container:Pods.xcodeproj">

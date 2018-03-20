@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JVFloatLabeledTextField
 
 class CollectData: UIViewController {
     
@@ -15,7 +16,7 @@ class CollectData: UIViewController {
     var pickerView = UIPickerView()
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+        //self.view.endEditing(false)
     }
     
     override func viewDidLoad() {
@@ -26,15 +27,46 @@ class CollectData: UIViewController {
         getWeeks.inputView = pickerView
         getWeeks.text = weekOptions[pickerView.selectedRow(inComponent: 0)]
         
+        getRegularHours.becomeFirstResponder()
+        
+        
+        print("View Height : ",view.frame.origin.y)
+        print("Buttin Height : ",buttonProcessDataUI.frame.origin.y)
 
+        
+        
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
+
         
     }
 
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            let keyboardHeight = keyboardSize.height
+            //print(keyboardHeight)
+
+            buttonProcessDataUI.frame.size.height = keyboardHeight / 5
+            buttonProcessDataUI.frame.size.width = view.frame.width
+
+            buttonProcessDataUI.frame.origin = CGPoint(x: 0, y: (view.frame.height - keyboardHeight) - buttonProcessDataUI.frame.height)
+
+
+            print("Keyboard Height : ",keyboardHeight)
+
+            
+            print("Cutome Height : ",(view.frame.height - keyboardHeight) - buttonProcessDataUI.frame.height)
+
+//            buttonProcessDataUI.frame.origin = CGPoint(x: 95, y: 388)
+
+            
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
@@ -47,6 +79,7 @@ class CollectData: UIViewController {
     @IBOutlet weak var getStateHolidays: UITextField!
     @IBOutlet weak var getSickHours: UITextField!
     @IBOutlet weak var getWeeks: UITextField!
+    @IBOutlet weak var buttonProcessDataUI: UIButton!
     
 
     
@@ -57,7 +90,7 @@ class CollectData: UIViewController {
         if sender.isOn == false
         {
             getOvertimeHours.text = ""
-            getOvertimeHours.resignFirstResponder()
+            //getOvertimeHours.resignFirstResponder()
         }
         else
         {
@@ -72,7 +105,7 @@ class CollectData: UIViewController {
         if sender.isOn == false
         {
             getStateHolidays.text = ""
-            getStateHolidays.resignFirstResponder()
+            //getStateHolidays.resignFirstResponder()
         }
         else
         {
@@ -86,7 +119,7 @@ class CollectData: UIViewController {
         if sender.isOn == false
         {
             getSickHours.text = ""
-            getSickHours.resignFirstResponder()
+            //getSickHours.resignFirstResponder()
         }
         else
         {
@@ -124,18 +157,20 @@ extension CollectData:UITextFieldDelegate
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+        //textField.resignFirstResponder()
         return true
     }
     
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
-        textField.resignFirstResponder()
+        //textField.resignFirstResponder()
         
     }
 
     
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
     {
+     
+        
         
         if textField == getRegularHours || textField == getHourRate || textField == getOvertimeHours || textField == getStateHolidays || textField == getSickHours
         {
