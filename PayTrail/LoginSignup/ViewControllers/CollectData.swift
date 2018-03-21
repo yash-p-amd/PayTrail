@@ -91,6 +91,7 @@ class CollectData: UIViewController {
         {
             getOvertimeHours.text = ""
             //getOvertimeHours.resignFirstResponder()
+            getRegularHours.becomeFirstResponder()
         }
         else
         {
@@ -106,6 +107,8 @@ class CollectData: UIViewController {
         {
             getStateHolidays.text = ""
             //getStateHolidays.resignFirstResponder()
+            getRegularHours.becomeFirstResponder()
+
         }
         else
         {
@@ -120,6 +123,8 @@ class CollectData: UIViewController {
         {
             getSickHours.text = ""
             //getSickHours.resignFirstResponder()
+            getRegularHours.becomeFirstResponder()
+
         }
         else
         {
