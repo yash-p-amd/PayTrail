@@ -231,7 +231,7 @@
                                 <rect key="frame" x="63" y="287" width="248" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -247,6 +247,9 @@
                         <outlet property="getSickHours" destination="KzR-cX-Kul" id="LzF-pO-6Y9"/>
                         <outlet property="getStateHolidays" destination="YBg-Jy-B7d" id="U3S-I9-q40"/>
                         <outlet property="getWeeks" destination="2ey-8R-aFS" id="hww-gS-07z"/>
+                        <outlet property="switchOvertimeHoursUI" destination="UJf-Hk-t3J" id="uAu-S5-jpx"/>
+                        <outlet property="switchSickHoursUI" destination="MEL-83-B8J" id="v3f-Ls-RVR"/>
+                        <outlet property="switchStateHolidaysUI" destination="WAu-Z5-xHc" id="PEM-R3-k3h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nlx-f6-h1K" userLabel="First Responder" sceneMemberID="firstResponder"/>

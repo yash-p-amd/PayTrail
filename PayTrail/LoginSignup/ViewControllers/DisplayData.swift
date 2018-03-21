@@ -13,7 +13,8 @@ class DisplayData: UITableViewController {
     
     var titlesForSection = ["Work Details","Salary Details"]
     public var calculatedData: ProcessData? = nil
-
+    
+    //var cell = DisplayDataCell()
     
     @IBOutlet var dataTable: UITableView!
     
@@ -38,11 +39,11 @@ class DisplayData: UITableViewController {
     
 
     var WorkDetailsDict =
-        [   ["title":"Regular Hours","data":"data","key":"REGULAR_HOURS"],
-            ["title":"Rate","data":"data","key":"RATE"],
-            ["title":"Overtime Hours","data":"data","key":"OVERTIME_HOURS"],
-            ["title":"State Hours","data":"data","key":"STATE_HOURS"],
-            ["title":"E/S Hours","data":"data","key":"ES_HOURS"] ]
+        [   ["title":"Regular Hours","data":"data","key":"REGULAR_HOURS","color":"no"],
+            ["title":"Rate","data":"data","key":"RATE","color":"no"],
+            ["title":"Overtime Hours","data":"data","key":"OVERTIME_HOURS","color":"no"],
+            ["title":"State Hours","data":"data","key":"STATE_HOURS","color":"no"],
+            ["title":"E/S Hours","data":"data","key":"ES_HOURS","color":"no"] ]
     
     
 
@@ -82,7 +83,7 @@ class DisplayData: UITableViewController {
         SalaryDetailsDict[13]["data"] = String(calculatedData!.DISPLAY_YEAR_INCOME)
         
         
-        
+  
 
 
     }
@@ -113,12 +114,20 @@ class DisplayData: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return titlesForSection[section]
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         let cell:DisplayDataCell = self.tableView.dequeueReusableCell(withIdentifier: "DisplayDataCellIden", for: indexPath) as! DisplayDataCell
+        return cell
+    }
 
-
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
+    {
+        
+        let cell:DisplayDataCell = cell as! DisplayDataCell
+        
+        //For UICOLOR code
+        //http://uicolor.xyz/#/rgb-to-ui
         if indexPath.section == 0
         {
             cell.title.text = WorkDetailsDict[indexPath.row]["title"]
@@ -129,11 +138,8 @@ class DisplayData: UITableViewController {
             cell.title.text = SalaryDetailsDict[indexPath.row]["title"]
             cell.data.text = String("$ " + SalaryDetailsDict[indexPath.row]["data"]!)
         }
-        
-        //For UICOLOR code
-        //http://uicolor.xyz/#/rgb-to-ui
         if indexPath.section == 1 {
-            
+
             if SalaryDetailsDict[indexPath.row]["color"] == "green" {
                 cell.data.textColor = UIColor(red:0.27, green:0.62, blue:0.26, alpha:1.0)
             }
@@ -145,8 +151,8 @@ class DisplayData: UITableViewController {
                 cell.data.textColor = UIColor(red:1.00, green:0.26, blue:0.26, alpha:1.0)
             }
         }
-        return cell
     }
+    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {

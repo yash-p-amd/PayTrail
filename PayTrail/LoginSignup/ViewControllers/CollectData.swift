@@ -15,6 +15,9 @@ class CollectData: UIViewController {
 
     var pickerView = UIPickerView()
 
+    var checkBool = Bool()
+
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         //self.view.endEditing(false)
     }
@@ -34,13 +37,32 @@ class CollectData: UIViewController {
         print("Buttin Height : ",buttonProcessDataUI.frame.origin.y)
 
         
-        
+        getOvertimeHours.center.x  -= view.bounds.width
+        getStateHolidays.center.x -= view.bounds.width
+        getSickHours.center.x -= view.bounds.width
         
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
+        
+        if self.isBeingPresented || self.isMovingToParentViewController {
+            // Perform an action that will only be done once
+            
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        
 
         
     }
@@ -81,7 +103,10 @@ class CollectData: UIViewController {
     @IBOutlet weak var getWeeks: UITextField!
     @IBOutlet weak var buttonProcessDataUI: UIButton!
     
-
+    @IBOutlet weak var switchOvertimeHoursUI: UISwitch!
+    @IBOutlet weak var switchStateHolidaysUI: UISwitch!
+    @IBOutlet weak var switchSickHoursUI: UISwitch!
+    
     
     
     @IBAction func switchOvertimeHours(_ sender: UISwitch) {
@@ -90,12 +115,14 @@ class CollectData: UIViewController {
         if sender.isOn == false
         {
             getOvertimeHours.text = ""
-            //getOvertimeHours.resignFirstResponder()
             getRegularHours.becomeFirstResponder()
+            animateTextFields(getTextFields: getOvertimeHours, out: true)
         }
         else
         {
             getOvertimeHours.becomeFirstResponder()
+            animateTextFields(getTextFields: getOvertimeHours, out: false)
+
         }
         
     }
@@ -106,13 +133,14 @@ class CollectData: UIViewController {
         if sender.isOn == false
         {
             getStateHolidays.text = ""
-            //getStateHolidays.resignFirstResponder()
             getRegularHours.becomeFirstResponder()
+            animateTextFields(getTextFields: getStateHolidays, out: true)
 
         }
         else
         {
             getStateHolidays.becomeFirstResponder()
+            animateTextFields(getTextFields: getStateHolidays, out: false)
         }
     }
     
@@ -122,13 +150,37 @@ class CollectData: UIViewController {
         if sender.isOn == false
         {
             getSickHours.text = ""
-            //getSickHours.resignFirstResponder()
             getRegularHours.becomeFirstResponder()
-
+            animateTextFields(getTextFields: getSickHours, out: true)
         }
         else
         {
             getSickHours.becomeFirstResponder()
+            animateTextFields(getTextFields: getSickHours, out: false)
+        }
+    }
+    
+    func animateTextFields(getTextFields:UITextField, out:Bool)
+    {
+        if out
+        {
+            UIView.animate(withDuration: 0.3, delay: 0.0,
+                           options: [.curveEaseInOut],
+                           animations: {
+                            getTextFields.center.x  -= self.view.bounds.width
+            },
+                           completion: nil
+            )
+        }
+        else
+        {
+            UIView.animate(withDuration: 0.3, delay: 0.0,
+                           options: [.curveEaseInOut],
+                           animations: {
+                            getTextFields.center.x  += self.view.bounds.width
+            },
+                           completion: nil
+            )
         }
     }
     
