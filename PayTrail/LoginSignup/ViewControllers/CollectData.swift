@@ -30,6 +30,9 @@ class CollectData: UIViewController {
         getWeeks.inputView = pickerView
         getWeeks.text = weekOptions[pickerView.selectedRow(inComponent: 0)]
         
+        getWeeks.allowsEditingTextAttributes = false
+//        getWeeks.isSecureTextEntry = true
+        
         getRegularHours.becomeFirstResponder()
         
         

@@ -136,7 +136,7 @@ class DisplayData: UITableViewController {
         else
         {
             cell.title.text = SalaryDetailsDict[indexPath.row]["title"]
-            cell.data.text = String("$ " + SalaryDetailsDict[indexPath.row]["data"]!)
+            cell.data.text = String(SalaryDetailsDict[indexPath.row]["data"]! + " $")
         }
         if indexPath.section == 1 {
 

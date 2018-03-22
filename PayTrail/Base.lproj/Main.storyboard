@@ -105,9 +105,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hours" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ek-8t-lDC" customClass="JVFloatLabeledTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hours" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ek-8t-lDC" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="63" y="100" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="xLg-xa-vt4"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -123,9 +125,8 @@
                                     <outlet property="delegate" destination="Jp3-IS-REX" id="VjT-Gz-SIM"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rate" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ts0-4D-j9e" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="191" y="100" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rate" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ts0-4D-j9e" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="191" y="101" width="120" height="29"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -141,23 +142,20 @@
                                     <outlet property="delegate" destination="Jp3-IS-REX" id="87m-o8-nPf"/>
                                 </connections>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UJf-Hk-t3J">
-                                <rect key="frame" x="262" y="146" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UJf-Hk-t3J">
+                                <rect key="frame" x="63" y="146" width="51" height="31"/>
                                 <connections>
                                     <action selector="switchOvertimeHours:" destination="Jp3-IS-REX" eventType="valueChanged" id="JpT-PU-xh2"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WAu-Z5-xHc">
-                                <rect key="frame" x="262" y="195" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WAu-Z5-xHc">
+                                <rect key="frame" x="63" y="194" width="51" height="31"/>
                                 <connections>
                                     <action selector="switchStateHolidays:" destination="Jp3-IS-REX" eventType="valueChanged" id="sSn-eP-E0q"/>
                                 </connections>
                             </switch>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Overttime" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOb-PU-aMe" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="63" y="147" width="191" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Overttime" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOb-PU-aMe" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="120" y="147" width="191" height="29"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -173,9 +171,8 @@
                                     <outlet property="delegate" destination="Jp3-IS-REX" id="fE3-Dg-eO8"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State Holidays" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YBg-Jy-B7d" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="63" y="196" width="189" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State Holidays" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YBg-Jy-B7d" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="120" y="194" width="187" height="29"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -191,27 +188,8 @@
                                     <outlet property="delegate" destination="Jp3-IS-REX" id="jOq-z0-qQM"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sick Hours" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KzR-cX-Kul" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="63" y="243" width="191" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
-                                        <real key="value" value="-15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
-                                        <real key="value" value="-5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="Jp3-IS-REX" id="BNt-KA-xpm"/>
-                                </connections>
-                            </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MEL-83-B8J">
-                                <rect key="frame" x="262" y="242" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MEL-83-B8J">
+                                <rect key="frame" x="63" y="243" width="51" height="31"/>
                                 <connections>
                                     <action selector="switchSickHours:" destination="Jp3-IS-REX" eventType="valueChanged" id="6wA-ko-Wd2"/>
                                 </connections>
@@ -227,15 +205,60 @@
                                     <action selector="buttonProcessData:" destination="Jp3-IS-REX" eventType="touchUpInside" id="Vur-tn-jq5"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ey-8R-aFS">
-                                <rect key="frame" x="63" y="287" width="248" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sick Hours" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KzR-cX-Kul" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="120" y="244" width="187" height="29"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                        <real key="value" value="-15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
+                                        <real key="value" value="-5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="Jp3-IS-REX" id="BNt-KA-xpm"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ey-8R-aFS">
+                                <rect key="frame" x="63" y="286" width="249" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5ek-8t-lDC" firstAttribute="leading" secondItem="OL1-fU-XWM" secondAttribute="leading" constant="63" id="1Ht-9J-exH"/>
+                            <constraint firstItem="WAu-Z5-xHc" firstAttribute="leading" secondItem="MEL-83-B8J" secondAttribute="leading" id="2SK-cR-fL6"/>
+                            <constraint firstItem="MEL-83-B8J" firstAttribute="top" secondItem="WAu-Z5-xHc" secondAttribute="bottom" constant="18" id="7sc-nU-qr9"/>
+                            <constraint firstItem="5ek-8t-lDC" firstAttribute="centerY" secondItem="Ts0-4D-j9e" secondAttribute="centerY" id="7xQ-RU-2Sf"/>
+                            <constraint firstItem="2ey-8R-aFS" firstAttribute="centerX" secondItem="t2z-gw-EPm" secondAttribute="centerX" id="Bzh-Qx-j3U"/>
+                            <constraint firstItem="Ts0-4D-j9e" firstAttribute="trailing" secondItem="bOb-PU-aMe" secondAttribute="trailing" id="CzO-B0-RKM"/>
+                            <constraint firstItem="5ek-8t-lDC" firstAttribute="baseline" secondItem="Ts0-4D-j9e" secondAttribute="baseline" id="D6J-cM-6dF"/>
+                            <constraint firstItem="YBg-Jy-B7d" firstAttribute="leading" secondItem="KzR-cX-Kul" secondAttribute="leading" id="EG1-m4-nsi"/>
+                            <constraint firstItem="MEL-83-B8J" firstAttribute="leading" secondItem="2ey-8R-aFS" secondAttribute="leading" id="EaE-2z-dV1"/>
+                            <constraint firstItem="YBg-Jy-B7d" firstAttribute="trailing" secondItem="KzR-cX-Kul" secondAttribute="trailing" id="EeE-xR-d2H"/>
+                            <constraint firstItem="5ek-8t-lDC" firstAttribute="bottom" secondItem="Ts0-4D-j9e" secondAttribute="bottom" id="Jb5-u7-yya"/>
+                            <constraint firstItem="OL1-fU-XWM" firstAttribute="trailing" secondItem="Ts0-4D-j9e" secondAttribute="trailing" constant="64" id="KWY-bM-piQ"/>
+                            <constraint firstItem="UJf-Hk-t3J" firstAttribute="centerY" secondItem="bOb-PU-aMe" secondAttribute="centerY" id="NXb-xB-MC5"/>
+                            <constraint firstItem="5ek-8t-lDC" firstAttribute="top" secondItem="OL1-fU-XWM" secondAttribute="top" constant="36" id="TDY-z0-s8i"/>
+                            <constraint firstItem="WAu-Z5-xHc" firstAttribute="top" secondItem="YBg-Jy-B7d" secondAttribute="top" id="WKp-6W-Sbt"/>
+                            <constraint firstItem="UJf-Hk-t3J" firstAttribute="top" secondItem="5ek-8t-lDC" secondAttribute="bottom" constant="16" id="Ya6-b8-qnM"/>
+                            <constraint firstItem="UJf-Hk-t3J" firstAttribute="leading" secondItem="WAu-Z5-xHc" secondAttribute="leading" id="adR-4o-5OX"/>
+                            <constraint firstItem="MEL-83-B8J" firstAttribute="centerY" secondItem="KzR-cX-Kul" secondAttribute="centerY" id="agU-ZL-BsF"/>
+                            <constraint firstItem="bOb-PU-aMe" firstAttribute="leading" secondItem="UJf-Hk-t3J" secondAttribute="trailing" constant="8" symbolic="YES" id="aud-O9-am5"/>
+                            <constraint firstItem="Ts0-4D-j9e" firstAttribute="leading" secondItem="5ek-8t-lDC" secondAttribute="trailing" constant="8" symbolic="YES" id="cit-pC-pIE"/>
+                            <constraint firstItem="WAu-Z5-xHc" firstAttribute="top" secondItem="UJf-Hk-t3J" secondAttribute="bottom" constant="17" id="hbI-pj-V8I"/>
+                            <constraint firstItem="2ey-8R-aFS" firstAttribute="top" secondItem="MEL-83-B8J" secondAttribute="bottom" constant="12" id="l3m-ev-3NN"/>
+                            <constraint firstItem="OL1-fU-XWM" firstAttribute="trailing" secondItem="YBg-Jy-B7d" secondAttribute="trailing" constant="68" id="nXi-I5-xAh"/>
+                            <constraint firstItem="Ts0-4D-j9e" firstAttribute="baseline" secondItem="5ek-8t-lDC" secondAttribute="firstBaseline" id="s9I-2W-hsm"/>
+                            <constraint firstItem="bOb-PU-aMe" firstAttribute="leading" secondItem="YBg-Jy-B7d" secondAttribute="leading" id="vTT-EX-9Sl"/>
+                            <constraint firstItem="5ek-8t-lDC" firstAttribute="baseline" secondItem="Ts0-4D-j9e" secondAttribute="firstBaseline" id="wVs-5H-2uJ"/>
+                            <constraint firstItem="5ek-8t-lDC" firstAttribute="leading" secondItem="UJf-Hk-t3J" secondAttribute="leading" id="ygE-17-WOX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OL1-fU-XWM"/>
                     </view>
                     <navigationItem key="navigationItem" id="IPf-JP-XbW"/>
