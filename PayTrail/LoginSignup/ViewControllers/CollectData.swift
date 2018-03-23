@@ -17,6 +17,11 @@ class CollectData: UIViewController {
 
     var checkBool = Bool()
 
+    @IBOutlet weak var textFieldView: UIView!
+    
+    @IBOutlet weak var tempTax: UIButton!
+    
+    @IBOutlet weak var overttimehoursleading: NSLayoutConstraint!
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         //self.view.endEditing(false)
@@ -29,20 +34,16 @@ class CollectData: UIViewController {
         pickerView.selectRow(0, inComponent: 0, animated: false)
         getWeeks.inputView = pickerView
         getWeeks.text = weekOptions[pickerView.selectedRow(inComponent: 0)]
-        
         getWeeks.allowsEditingTextAttributes = false
-//        getWeeks.isSecureTextEntry = true
-        
         getRegularHours.becomeFirstResponder()
-        
-        
-        print("View Height : ",view.frame.origin.y)
-        print("Buttin Height : ",buttonProcessDataUI.frame.origin.y)
 
+
+        //Configure Animation Properties
+        getOvertimeHours.transform = CGAffineTransform(translationX: -getOvertimeHours.frame.width, y: 0)
+        getStateHolidays.transform = CGAffineTransform(translationX: -getStateHolidays.frame.width, y: 0)
+        getSickHours.transform = CGAffineTransform(translationX: -getSickHours.frame.width, y: 0)
         
-        getOvertimeHours.center.x  -= view.bounds.width
-        getStateHolidays.center.x -= view.bounds.width
-        getSickHours.center.x -= view.bounds.width
+        textFieldView.layoutIfNeeded()
         
     }
     
@@ -55,6 +56,10 @@ class CollectData: UIViewController {
             // Perform an action that will only be done once
             
         }
+
+ 
+
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -65,7 +70,7 @@ class CollectData: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        
+
 
         
     }
@@ -73,21 +78,10 @@ class CollectData: UIViewController {
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             let keyboardHeight = keyboardSize.height
-            //print(keyboardHeight)
 
             buttonProcessDataUI.frame.size.height = keyboardHeight / 5
             buttonProcessDataUI.frame.size.width = view.frame.width
-
             buttonProcessDataUI.frame.origin = CGPoint(x: 0, y: (view.frame.height - keyboardHeight) - buttonProcessDataUI.frame.height)
-
-
-            print("Keyboard Height : ",keyboardHeight)
-
-            
-            print("Cutome Height : ",(view.frame.height - keyboardHeight) - buttonProcessDataUI.frame.height)
-
-//            buttonProcessDataUI.frame.origin = CGPoint(x: 95, y: 388)
-
             
         }
     }
@@ -125,9 +119,7 @@ class CollectData: UIViewController {
         {
             getOvertimeHours.becomeFirstResponder()
             animateTextFields(getTextFields: getOvertimeHours, out: false)
-
         }
-        
     }
     
     @IBAction func switchStateHolidays(_ sender: UISwitch) {
@@ -138,7 +130,6 @@ class CollectData: UIViewController {
             getStateHolidays.text = ""
             getRegularHours.becomeFirstResponder()
             animateTextFields(getTextFields: getStateHolidays, out: true)
-
         }
         else
         {
@@ -170,7 +161,7 @@ class CollectData: UIViewController {
             UIView.animate(withDuration: 0.3, delay: 0.0,
                            options: [.curveEaseInOut],
                            animations: {
-                            getTextFields.center.x  -= self.view.bounds.width
+                            getTextFields.center.x  -= self.textFieldView.bounds.width
             },
                            completion: nil
             )
@@ -180,7 +171,7 @@ class CollectData: UIViewController {
             UIView.animate(withDuration: 0.3, delay: 0.0,
                            options: [.curveEaseInOut],
                            animations: {
-                            getTextFields.center.x  += self.view.bounds.width
+                            getTextFields.center.x  += self.textFieldView.bounds.width
             },
                            completion: nil
             )
