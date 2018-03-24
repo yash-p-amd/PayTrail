@@ -105,6 +105,10 @@ class CollectData: UIViewController {
     @IBOutlet weak var switchSickHoursUI: UISwitch!
     
     
+    @IBOutlet weak var AskOvertime: UILabel!
+    @IBOutlet weak var AskStateHolidays: UILabel!
+    @IBOutlet weak var AskSickHours: UILabel!
+    
     
     @IBAction func switchOvertimeHours(_ sender: UISwitch) {
         
@@ -113,12 +117,18 @@ class CollectData: UIViewController {
         {
             getOvertimeHours.text = ""
             getRegularHours.becomeFirstResponder()
-            animateTextFields(getTextFields: getOvertimeHours, out: true)
+            
+            animateTextFields(getUIComp: getOvertimeHours, out: true)
+            animateTextFields(getUIComp: AskOvertime, out: true)
+
+
         }
         else
         {
             getOvertimeHours.becomeFirstResponder()
-            animateTextFields(getTextFields: getOvertimeHours, out: false)
+            
+            animateTextFields(getUIComp: getOvertimeHours, out: false)
+            animateTextFields(getUIComp: AskOvertime, out: false)
         }
     }
     
@@ -129,12 +139,18 @@ class CollectData: UIViewController {
         {
             getStateHolidays.text = ""
             getRegularHours.becomeFirstResponder()
-            animateTextFields(getTextFields: getStateHolidays, out: true)
+            
+            animateTextFields(getUIComp: getStateHolidays, out: true)
+            animateTextFields(getUIComp: AskStateHolidays, out: true)
+
         }
         else
         {
             getStateHolidays.becomeFirstResponder()
-            animateTextFields(getTextFields: getStateHolidays, out: false)
+            
+            animateTextFields(getUIComp: getStateHolidays, out: false)
+            animateTextFields(getUIComp: AskStateHolidays, out: false)
+
         }
     }
     
@@ -145,23 +161,28 @@ class CollectData: UIViewController {
         {
             getSickHours.text = ""
             getRegularHours.becomeFirstResponder()
-            animateTextFields(getTextFields: getSickHours, out: true)
+            
+            animateTextFields(getUIComp: getSickHours, out: true)
+            animateTextFields(getUIComp: AskSickHours, out: true)
+
         }
         else
         {
             getSickHours.becomeFirstResponder()
-            animateTextFields(getTextFields: getSickHours, out: false)
+            animateTextFields(getUIComp: getSickHours, out: false)
+            animateTextFields(getUIComp: AskSickHours, out: false)
+
         }
     }
     
-    func animateTextFields(getTextFields:UITextField, out:Bool)
+    func animateTextFields(getUIComp:UIView, out:Bool)
     {
         if out
         {
             UIView.animate(withDuration: 0.3, delay: 0.0,
                            options: [.curveEaseInOut],
                            animations: {
-                            getTextFields.center.x  -= self.textFieldView.bounds.width
+                            getUIComp.center.x  -= self.textFieldView.bounds.width
             },
                            completion: nil
             )
@@ -171,7 +192,7 @@ class CollectData: UIViewController {
             UIView.animate(withDuration: 0.3, delay: 0.0,
                            options: [.curveEaseInOut],
                            animations: {
-                            getTextFields.center.x  += self.textFieldView.bounds.width
+                            getUIComp.center.x  += self.textFieldView.bounds.width
             },
                            completion: nil
             )

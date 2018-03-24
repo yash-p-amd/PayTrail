@@ -20,12 +20,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username or email" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JbT-zj-20T">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Admin" borderStyle="roundedRect" placeholder="Username or email" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JbT-zj-20T">
                                 <rect key="frame" x="16" y="266" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bje-RW-zUa">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Admin" borderStyle="roundedRect" placeholder="Password" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bje-RW-zUa">
                                 <rect key="frame" x="16" y="303" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -54,6 +54,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LD6-pn-E8F">
                                 <rect key="frame" x="16" y="375" width="343" height="30"/>
                                 <state key="normal" title="skip for now &gt;"/>
+                                <connections>
+                                    <segue destination="eLj-h4-mu3" kind="show" id="u11-9n-fqU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.13118219375610352" green="0.76496261358261108" blue="0.5767330527305603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -80,6 +83,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s4G-RL-C1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1055.2" y="-366.56671664167919"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qS2-5H-fqe">
+            <objects>
+                <viewController id="eLj-h4-mu3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SzW-m8-hnq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone 8" translatesAutoresizingMaskIntoConstraints="NO" id="Q0F-Em-vrb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Q0F-Em-vrb" firstAttribute="bottom" secondItem="V4l-jb-3BH" secondAttribute="bottom" id="SXB-cz-bYg"/>
+                            <constraint firstItem="Q0F-Em-vrb" firstAttribute="leading" secondItem="SzW-m8-hnq" secondAttribute="leading" id="foz-73-Ecw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V4l-jb-3BH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYp-WL-dwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295.19999999999999" y="410.64467766116945"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="odb-N1-gBh">
@@ -169,7 +196,7 @@
                                             <outlet property="delegate" destination="Jp3-IS-REX" id="BNt-KA-xpm"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State Holidays" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YBg-Jy-B7d" customClass="JVFloatLabeledTextField">
+                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Statutory Hours" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YBg-Jy-B7d" customClass="JVFloatLabeledTextField">
                                         <rect key="frame" x="0.0" y="60" width="191" height="29"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -203,16 +230,43 @@
                                             <outlet property="delegate" destination="Jp3-IS-REX" id="fE3-Dg-eO8"/>
                                         </connections>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sick Leave Hours?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08C-YK-HGi">
+                                        <rect key="frame" x="0.0" y="118" width="191" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statutory Holidays Hours?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLH-4E-j0r">
+                                        <rect key="frame" x="0.0" y="67" width="191" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overtime Hours?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTG-vI-Rlf">
+                                        <rect key="frame" x="0.0" y="21" width="191" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="KTG-vI-Rlf" firstAttribute="centerY" secondItem="bOb-PU-aMe" secondAttribute="centerY" id="2hW-kO-PvW"/>
+                                    <constraint firstItem="qLH-4E-j0r" firstAttribute="trailing" secondItem="YBg-Jy-B7d" secondAttribute="trailing" id="4HL-ge-MQi"/>
                                     <constraint firstItem="bOb-PU-aMe" firstAttribute="top" secondItem="3Qk-2N-X0Y" secondAttribute="top" constant="13" id="8A9-eb-9fa"/>
+                                    <constraint firstItem="qLH-4E-j0r" firstAttribute="leading" secondItem="YBg-Jy-B7d" secondAttribute="leading" id="Ab2-cr-HDc"/>
                                     <constraint firstItem="KzR-cX-Kul" firstAttribute="leading" secondItem="3Qk-2N-X0Y" secondAttribute="leading" id="HLQ-6D-Zam"/>
                                     <constraint firstItem="YBg-Jy-B7d" firstAttribute="leading" secondItem="3Qk-2N-X0Y" secondAttribute="leading" id="L9E-Dd-iUo"/>
                                     <constraint firstAttribute="trailing" secondItem="bOb-PU-aMe" secondAttribute="trailing" id="YZP-2k-5CI"/>
+                                    <constraint firstItem="KTG-vI-Rlf" firstAttribute="trailing" secondItem="bOb-PU-aMe" secondAttribute="trailing" id="gEb-mO-ETa"/>
                                     <constraint firstItem="YBg-Jy-B7d" firstAttribute="top" secondItem="bOb-PU-aMe" secondAttribute="bottom" constant="18" id="kaW-nU-21H"/>
                                     <constraint firstAttribute="trailing" secondItem="YBg-Jy-B7d" secondAttribute="trailing" id="kca-i7-irU"/>
+                                    <constraint firstItem="08C-YK-HGi" firstAttribute="centerY" secondItem="KzR-cX-Kul" secondAttribute="centerY" id="ldH-qV-pnj"/>
+                                    <constraint firstItem="08C-YK-HGi" firstAttribute="trailing" secondItem="KzR-cX-Kul" secondAttribute="trailing" id="mhJ-93-6J2"/>
                                     <constraint firstItem="bOb-PU-aMe" firstAttribute="leading" secondItem="3Qk-2N-X0Y" secondAttribute="leading" id="sXO-bB-ih9"/>
+                                    <constraint firstItem="08C-YK-HGi" firstAttribute="leading" secondItem="KzR-cX-Kul" secondAttribute="leading" id="vSU-qX-RRo"/>
                                     <constraint firstAttribute="trailing" secondItem="KzR-cX-Kul" secondAttribute="trailing" id="vey-9p-ofE"/>
+                                    <constraint firstItem="qLH-4E-j0r" firstAttribute="centerY" secondItem="YBg-Jy-B7d" secondAttribute="centerY" id="vgX-VW-5h1"/>
+                                    <constraint firstItem="KTG-vI-Rlf" firstAttribute="leading" secondItem="bOb-PU-aMe" secondAttribute="leading" id="zEK-bf-ji2"/>
                                     <constraint firstItem="KzR-cX-Kul" firstAttribute="top" secondItem="YBg-Jy-B7d" secondAttribute="bottom" constant="22" id="zx5-9U-Xj8"/>
                                 </constraints>
                             </view>
@@ -274,6 +328,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="IPf-JP-XbW"/>
                     <connections>
+                        <outlet property="AskOvertime" destination="KTG-vI-Rlf" id="4pp-Ac-Q1Q"/>
+                        <outlet property="AskSickHours" destination="08C-YK-HGi" id="qK3-e0-8Eh"/>
+                        <outlet property="AskStateHolidays" destination="qLH-4E-j0r" id="NQg-w0-LcX"/>
                         <outlet property="buttonProcessDataUI" destination="nbd-0y-KXS" id="eaq-cT-V6q"/>
                         <outlet property="getHourRate" destination="Ts0-4D-j9e" id="Bar-Bj-bNt"/>
                         <outlet property="getOvertimeHours" destination="bOb-PU-aMe" id="Kbb-Lg-35a"/>
@@ -353,4 +410,7 @@
             <point key="canvasLocation" x="1572" y="-367.46626686656674"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iPhone 8" width="375" height="667"/>
+    </resources>
 </document>
