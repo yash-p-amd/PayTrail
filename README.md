@@ -10,5 +10,5 @@
 
 Here's what it looks like in action. (UX IS IN EARLY STAGE)
 
-![Alt Text](https://github.com/YASH12366/PayTrail/blob/master/PayTrailDemo.gif)
+![Alt Text](https://github.com/YASH12366/PayTrail/blob/master/PayTrailDemo.gif)( Wait for GIF )
 
