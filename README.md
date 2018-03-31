@@ -2,7 +2,7 @@
 
 ## Payroll Deduction Calculator ##
 
-**Here's what the following Application can do**
+**Here's what the following Application can do ( Open README.md for Demo )**
 
 * Quickly estimate federal and provincial taxes.
 * Calculate Employement Insuracnce, Vacation Pay, CPP 
